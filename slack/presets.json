@@ -1,0 +1,585 @@
+{
+    "button": [
+        {
+        	"name": "newMessage",
+        	"label": "New Message",
+        	"info": "",
+        	"press": {
+        		"key": "n",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "setStatus",
+        	"label": "Set a Status",
+        	"info": "Press and hold to escape without setting a status.",
+        	"press": {
+        		"key": "y",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "callMute",
+        	"label": "Calls.Toggle Mute",
+        	"info": "",
+        	"press": {
+        		"key": "m",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "callVideo",
+        	"label": "Calls.Toggle Video",
+        	"info": "",
+        	"press": {
+        		"key": "v",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "callInvite",
+        	"label": "Calls.Invite List",
+        	"info": "Press and hold to escape without adding invites.",
+        	"press": {
+        		"key": "a",
+        		"modifiers": [],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "slackUndo",
+        	"label": "Edit.Undo",
+        	"info": "Press to undo.\nPress and hold to redo.",
+        	"press": {
+        		"key": "z",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "z",
+        		"virtual": true
+        	},
+        	"pressAndHold": {
+        		"key": "z",
+        		"modifiers": [
+        			"shift",
+        			"meta"
+        		],
+        		"name": "z",
+        		"virtual": true
+        	}
+        },
+        {
+        	"name": "slackRedo",
+        	"label": "Edit.Redo",
+        	"info": "Press to redo.\nPress and hold to undo.",
+        	"press": {
+        		"key": "z",
+        		"modifiers": [
+        			"shift",
+        			"meta"
+        		],
+        		"name": "z",
+        		"virtual": true
+        	},
+        	"pressAndHold": {
+        		"key": "z",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "z",
+        		"virtual": true
+        	}
+        },
+        {
+        	"name": "slackCut",
+        	"label": "Edit.Cut",
+        	"info": "",
+        	"press": {
+        		"key": "x",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "x",
+        		"virtual": true
+        	}
+        },
+        {
+        	"name": "slackCopy",
+        	"label": "Edit.Copy",
+        	"info": "Press to copy.\nPress and hold to cut.",
+        	"press": {
+        		"key": "c",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "c",
+        		"virtual": true
+        	},
+        	"pressAndHold": {
+        		"key": "x",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "x",
+        		"virtual": true
+        	}
+        },
+        {
+        	"name": "slackPaste",
+        	"label": "Edit.Paste",
+        	"info": "Press to paste.\nPress and hold to paste without formatting.",
+        	"press": {
+        		"key": "v",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "v",
+        		"virtual": true
+        	},
+        	"pressAndHold": {
+        		"key": "v",
+        		"modifiers": [
+        			"shift",
+        			"meta"
+        		],
+        		"name": "v",
+        		"virtual": true
+        	}
+        },
+        {
+        	"name": "slackEmoji",
+        	"label": "Edit.Emoji & Symbols",
+        	"exclusive": "mac",
+        	"info": "",
+        	"press": {
+        		"key": "space",
+        		"modifiers": [
+        			"control",
+        			"meta"
+        		],
+        		"name": "space",
+        		"virtual": true
+        	}
+        },
+        {
+        	"name": "formatBold",
+        	"label": "Formatting.Bold",
+        	"info": "",
+        	"press": {
+        		"key": "b",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatItalic",
+        	"label": "Formatting.Italic",
+        	"info": "",
+        	"press": {
+        		"key": "i",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatStrikethrough",
+        	"label": "Formatting.Strikethrough",
+        	"info": "",
+        	"press": {
+        		"key": "x",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatCodeInline",
+        	"label": "Formatting.Inline Code",
+        	"info": "",
+        	"press": {
+        		"key": "c",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatLink",
+        	"label": "Formatting.Link",
+        	"info": "Press and hold to escape the link dialogue without saving.",
+        	"press": {
+        		"key": "u",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatNumList",
+        	"label": "Formatting.Numbered List",
+        	"info": "",
+        	"press": {
+        		"key": "7",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatBulletList",
+        	"label": "Formatting.Bulleted List",
+        	"info": "",
+        	"press": {
+        		"key": "8",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatBlockquote",
+        	"label": "Formatting.Blockquote",
+        	"info": "",
+        	"press": {
+        		"key": "9",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "formatCodeBlock",
+        	"label": "Formatting.Code Block",
+        	"info": "",
+        	"press": {
+        		"key": "c",
+        		"modifiers": ["shift", "alt", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "prevChannel",
+        	"label": "Navigation.Previous Channel",
+        	"info": "",
+        	"press": {
+        		"key": "up",
+        		"modifiers": ["alt"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "nextChannel",
+        	"label": "Navigation.Next Channel",
+        	"info": "",
+        	"press": {
+        		"key": "down",
+        		"modifiers": ["alt"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "allUnreads",
+        	"label": "Navigation.All Unreads",
+        	"info": "",
+        	"press": {
+        		"key": "a",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "threads",
+        	"label": "Navigation.Threads",
+        	"info": "",
+        	"press": {
+        		"key": "t",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "allDms",
+        	"label": "Navigation.All DMs",
+        	"info": "",
+        	"press": {
+        		"key": "k",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "mentionsReactions",
+        	"label": "Navigation.Mentions & Reactions",
+        	"info": "",
+        	"press": {
+        		"key": "m",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "savedItems",
+        	"label": "Navigation.Saved Items",
+        	"info": "",
+        	"press": {
+        		"key": "s",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "channelBrowser",
+        	"label": "Navigation.Channel Browser",
+        	"info": "",
+        	"press": {
+        		"key": "l",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "peopleUserGroups",
+        	"label": "Navigation.People & User Groups",
+        	"info": "",
+        	"press": {
+        		"key": "e",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "downloads",
+        	"label": "Navigation.Downloads",
+        	"info": "Opens the list of recent downloads.\n\nPress and hold to escape.",
+        	"press": {
+        		"key": "j",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "jumpToDialogue",
+        	"label": "Navigation.Jump To",
+        	"info": "Opens the \"Jump to...\" dialogue.\n\nPress and hold to escape the dialogue box.",
+        	"press": {
+        		"key": "k",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "searchWorkspace",
+        	"label": "Navigation.Search Workspace",
+        	"info": "Opens the search dialogue and searches the entire workspace.\n\nPress and hold to escape the dialogue box.",
+        	"press": {
+        		"key": "g",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "searchConversation",
+        	"label": "Navigation.Search Current Conversation\/View",
+        	"info": "Opens the search dialogue and searches the current conversation or view.\n\nPress and hold to escape the dialogue box.",
+        	"press": {
+        		"key": "f",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "escape",
+        		"modifiers": [],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "channelInfo",
+        	"label": "View.Channel Info",
+        	"info": "",
+        	"press": {
+        		"key": "i",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "leftSidebar",
+        	"label": "View.Toggle Left Sidebar",
+        	"info": "",
+        	"press": {
+        		"key": "d",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "rightPane",
+        	"label": "View.Toggle Right Pane",
+        	"info": "",
+        	"press": {
+        		"key": ".",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "kbsc",
+        	"label": "View.Keyboard Shortcuts",
+        	"info": "",
+        	"press": {
+        		"key": "/",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "reload",
+        	"label": "View.Reload",
+        	"info": "Press and hold to force reload.",
+        	"press": {
+        		"key": "r",
+        		"modifiers": ["meta"],
+        		"virtual": "true"
+        	},
+        	"pressAndHold": {
+        		"key": "r",
+        		"modifiers": ["shift", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "fullScreen",
+        	"exclusive": "mac",
+        	"label": "View.Toggle Full Screen",
+        	"info": "",
+        	"press": {
+        		"key": "f",
+        		"modifiers": ["control", "meta"],
+        		"virtual": "true"
+        	}
+        },
+        {
+        	"name": "zoomIn",
+        	"label": "View.Zoom In",
+        	"info": "",
+        	"press": {
+        		"key": "numpad_plus",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "numpad_plus",
+        		"virtual": false
+        	}
+        },
+        {
+        	"name": "zoomOut",
+        	"label": "View.Zoom Out",
+        	"info": "",
+        	"press": {
+        		"key": "numpad_minus",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "numpad_minus",
+        		"virtual": false
+        	}
+        },
+        {
+        	"name": "zoomActual",
+        	"label": "View.Zoom Actual Size",
+        	"info": "",
+        	"press": {
+        		"key": "numpad_0",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "numpad_0",
+        		"virtual": false
+        	}
+        }
+    ],
+    "dial": [
+    	{
+    		"name": "slackZoom",
+        	"label": "View.Zoom",
+        	"info": "Turn = Zoom\nPress = Reset to Actual Size",
+    		"leftTurn": {
+    			"key": "numpad_minus",
+    			"modifiers": [
+    				"meta"
+    			],
+    			"name": "numpad_minus",
+    			"virtual": false
+    		},
+    		"rightTurn": {
+    			"key": "numpad_plus",
+    			"modifiers": [
+    				"meta"
+    			],
+    			"name": "numpad_plus",
+    			"virtual": false
+    		},
+    		"press": {
+        		"key": "numpad_0",
+        		"modifiers": [
+        			"meta"
+        		],
+        		"name": "numpad_0",
+        		"virtual": false
+        	},
+    		"sensitivity": 6
+    	}
+    ],
+    "orbiter": [
+    	{
+    		"name": "slackZoom",
+        	"label": "View.Zoom",
+        	"info": "Turn = Zoom\n\nNote: Tilt X & Y are unassigned.",
+    		"leftTurn": {
+    			"key": "numpad_minus",
+    			"modifiers": [
+    				"meta"
+    			],
+    			"name": "numpad_minus",
+    			"virtual": false
+    		},
+    		"rightTurn": {
+    			"key": "numpad_plus",
+    			"modifiers": [
+    				"meta"
+    			],
+    			"name": "numpad_plus",
+    			"virtual": false
+    		},
+    		"turnSensitivity": 6
+    	}
+    ]
+}

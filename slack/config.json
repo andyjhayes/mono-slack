@@ -1,0 +1,12 @@
+{
+    "name": "Slack",
+    "id": "com.tinyspeck.slackmacgap",
+    "bundle": [
+        "com.tinyspeck.slackmacgap"
+    ],
+    "connection": [],
+    "exe": [
+    	"slack.exe"
+    ],
+    "modes": []
+}
