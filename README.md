@@ -6,7 +6,7 @@ This is a collection of Monogram and Palette Gear module presets for the Slack d
 
 - Mac (macOS 10.12 or later, 10.13 or later recommended) or PC (Windows 10)
 - [Monogram Creator](https://monogramcc.com/download/)
-- [Monogram Creative Console (recommended) or Palette Gear](https://monogramcc.com/)
+- [Monogram Creative Console or Palette Gear](https://monogramcc.com/)
 - [Slack Desktop](https://slack.com/) (Note: not intended for use with in-browser Slack)
 
 ---
