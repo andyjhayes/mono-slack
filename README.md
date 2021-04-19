@@ -15,10 +15,10 @@ This is a collection of Monogram and Palette Gear module presets for the Slack d
 
 ### Add integration bundle to Monogram Creator ###
 
-1. In Monogram Creator, go to File > Preferences > Integrations.
+1. In Monogram Creator, go to Creator > Preferences > Integrations (macOS) or File > Preferences > Integrations (Windows).
 2. Hit the + button (lower right); this should open a file browser.
 3. Browse for your <code>mono-slack-main</code> folder, then double-click it to look inside for the <code>slack</code> folder.
-4. Select the <code>slack</code> folder without opening it, then hit "Select Folder" (bottom right).
+4. Choose the <code>slack</code> folder, then hit "Open" (bottom right).
 
 ---
 
